@@ -1,0 +1,86 @@
+body {
+  background: #ffffff;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.card {
+  background: #f8f9fa;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+  width: 90%;
+  max-width: 600px;
+  text-align: center;
+}
+
+h2 {
+  margin-bottom: 1rem;
+  font-size: 22px;
+}
+
+input[type="file"] {
+  display: block;
+  margin: 1rem auto;
+}
+
+button {
+  padding: 10px 16px;
+  margin: 10px auto;
+  font-size: 14px;
+  background: #28a745;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #218838;
+}
+
+h3 {
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 18px;
+}
+
+.output-box {
+  background: #e9ecef;
+  padding: 1rem;
+  border-radius: 6px;
+  margin-top: 10px;
+}
+
+textarea {
+  width: 100%;
+  border: none;
+  resize: none;
+  background: transparent;
+  font-size: 14px;
+  font-family: monospace;
+  color: #333;
+}
+
+button.download {
+  background: #007bff;
+}
+
+button.download:hover {
+  background: #0056b3;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  h2 {
+    font-size: 18px;
+  }
+
+  button {
+    font-size: 13px;
+  }
+}

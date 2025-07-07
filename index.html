@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>OCR Image Text Extraction</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="card">
+    <h2>Upload an Image for Text Extraction</h2>
+    <input type="file" id="imageInput" accept="image/*" />
+    <button onclick="extractText()">Upload & Extract Text</button>
+
+    <h3>Extracted Text:</h3>
+    <div class="output-box">
+      <textarea id="outputText" rows="8" readonly placeholder="Extracted text will appear here..."></textarea>
+    </div>
+
+    <button class="download" onclick="downloadText()">Download Text</button>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/tesseract.js@4/dist/tesseract.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
